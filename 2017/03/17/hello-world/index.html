@@ -22,7 +22,7 @@
 <p>安装插件与依赖，执行以下命令，你会发现…\Blogs\node_modules目录下多了好多文件夹：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
 <p>安装完成之后，hexo会在你指定的Blogs文件夹里新建所需要的文件，如下图所示：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_194042.png" alt=""></p>
+<p><img src="http://i1.piimg.com/567571/754aab124ea2bc1e.png" alt=""></p>
 <p>完成以上命令之后，就可以输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo -g d</div><div class="line">hexo s</div></pre></td></tr></table></figure>
 <p>如下图所示，则表明已完成博客在本地的部署。</p>
@@ -35,24 +35,24 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">menu:  #导航栏</div><div class="line">  主页: /</div><div class="line">  归档: /archives</div><div class="line">  关于: /about  #介绍一下你自己</div><div class="line">  网络工具: /tools  #自己添加</div><div class="line">  资源共享: /share  #自己添加</div><div class="line"></div><div class="line">widgets:  ## 右边的零部件，jacman主题提供了7个：category、tag、rss、archive、tagcloud、links、weibo、douban，可以根据自己喜好增减</div><div class="line">- category  #目录</div><div class="line">- tagcloud  #标签云（也可以选用标签，上面显示数值）</div><div class="line">- links  #友情链接</div><div class="line">- rss  #</div><div class="line">- weibo  #微博秀</div></pre></td></tr></table></figure>
 <p>主题配置好了，可以在本地预览一下。</p>
 <h3 id="第四步：注册Github账户，将本地文件部署至Github账户中"><a href="#第四步：注册Github账户，将本地文件部署至Github账户中" class="headerlink" title="第四步：注册Github账户，将本地文件部署至Github账户中"></a>第四步：注册Github账户，将本地文件部署至Github账户中</h3><p>前往<a href="https://github.com/" target="_blank" rel="external">Github</a>网站，注册一个新用户，并创建一个新的仓库(repository)。</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_201727.png" alt=""><br>此处，最好保持一致。</p>
+<p><img src="http://i1.piimg.com/567571/2af24af5b05d9e10.png" alt=""><br>此处，最好保持一致。</p>
 <p>然后新建一个Github Pages，并选择一个主题，进入setting设置：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202016.png" alt=""><br>此处，由于我已经开通过了，故而没有显示新建按钮。</p>
+<p><img src="http://i1.piimg.com/567571/2af24af5b05d9e10.png" alt=""><br>此处，由于我已经开通过了，故而没有显示新建按钮。</p>
 <p>编辑本地Blogs目录下文件comfig.yml，在最后添加如下代码：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202139.png" alt=""><br>此处，改为你自己的用户名即可。</p>
+<p><img src="http://i2.buimg.com/567571/95216b5713fa679f.png" alt=""><br>此处，改为你自己的用户名即可。</p>
 <p>设置Github的SSH，在Git中输入如下命令即可生产SSH密钥：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C “邮箱地址”</div></pre></td></tr></table></figure>
 <p>执行完上述命令后，会在本地磁盘中生产一个.ssh的文件夹，用记事本打开其中的id_rsa.pub文件，将其中的内容上传至Github的SSH keys中：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202303.png" alt=""></p>
+<p><img src="http://i4.buimg.com/567571/4dab5127064988fc.png" alt=""></p>
 <p>执行以下命令即可完成部署：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <p>如果上述命令执行失败，则先执行此命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 <p>至此，我们的博客已经在Github上面部署成功了，可以在浏览器中访问ChineseHuang.github.io试一试了。</p>
 <h3 id="第五步：绑定域名"><a href="#第五步：绑定域名" class="headerlink" title="第五步：绑定域名"></a>第五步：绑定域名</h3><p>我使用的是阿里云的域名，首先进入域名云解析管理页面：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202507.png" alt=""></p>
+<p><img src="http://i2.buimg.com/567571/7fbccc963080fb46.png" alt=""></p>
 <p>选择解析，添加解析（选择CNAME，添加你的二级域名）：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202615.png" alt=""></p>
+<p><img src="http://i4.buimg.com/567571/5ac146f0b7d2f0ce.png" alt=""></p>
 <p>在Github的项目路径中新建CNAME文件，并在CNAME文件中，写入你在云解析设置的二级域名：</p>
-<p><img src="C:\Users\Administrator\Pictures\2017-03-21_202734.png" alt=""></p>
+<p><img src="http://i4.buimg.com/567571/52ced898ee7b84f0.png" alt=""></p>
 <p>现在，可以直接访问你的域名了。</p>
 </div><div class="tags"></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="请输入关键字..."/></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-gui"> Categorías</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> Etiquetas</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-fei"> Archivo</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> Recientes</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/17/hello-world/">Hexo个人博客搭建</a></li></ul></div></div></div></div><a id="totop" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.3.0" async></script><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |<a href="/atom.xml">订阅本站</a> |<span>联系博主：<a href="mailto:null" target="_blank" class="fa fa-email"> </a><a href="null" target="_blank" class="fa fa-weibo"></a><a href="null" target="_blank" class="fa fa-github"> </a></span></p><p><span> Copyright &copy;<a href="/." rel="nofollow">Huang Tong</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span><span><a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> Theme </a>by<a rel="nofollow" target="_blank" href="https://github.com/chaooo"> Charles.</a></span></p></div></div></div><script type="text/javascript" src="/js/search.json.js?v=1.3.0"></script></body></html>
