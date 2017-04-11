@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="ChineseHuang,Huang Tong,huangt的博客专注于各种编程(C#,JAVA,Python,Android,OpenGL,Qt...)，数据挖掘内容，地理信息系统内容等。"><title> | ChineseHuang</title><link rel="stylesheet" type="text/css" href="//fonts.css.network/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.3.0"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=1.3.0"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">ChineseHuang</h1><a id="logo" href="/.">ChineseHuang</a><p class="description">哪有什么岁月静好，不过是有人替你负重前行</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/"><i class="fa fa-user"> 关于</i></a><a href="/"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title"></h1><div class="post-meta">Apr 11, 2017<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><div class="post-content"><p>title: Web数据挖掘<br>tags: [Web,数据挖掘]<br>categories: Web</p>
+<p>Web数据挖掘是在数据挖掘技术的基础上，针对网络数据，主要是Web文档和服务日志文件等数据进行分析、归纳和汇总，并在其中发现和提取潜在的有用信息及知识的技术。</p>
+<h3 id="Web数据挖掘概述"><a href="#Web数据挖掘概述" class="headerlink" title="Web数据挖掘概述"></a>Web数据挖掘概述</h3><p><img src="http://i4.buimg.com/1949/6c43a1a0cbac2236.png" alt="Markdown"></p>
+<p><img src="http://i2.muimg.com/1949/84dafb57aa68efb2.png" alt="Markdown"></p>
+<p>###Web内容挖掘</p>
+<p>　　Web内容挖掘指从Web网站的内容中发现潜在的有价值的信息和抽取知识的过程。Web网站的内容分为：文本、图像、音频、视频和动画等。因此，Web 内容挖掘又可分为文本数据挖掘（包括文本和网页文件格式）和多媒体数据挖掘（图像、音频、视频等多媒体数据），Web内容挖掘主要应用于文献检索系统、垃圾邮件的处理、信息过滤、电子资源检索等。（此处以文本挖掘为例）</p>
+<p><img src="http://i1.piimg.com/1949/76e2601b7d89c607.png" alt="Markdown"></p>
+<p><img src="http://i1.piimg.com/1949/5d82aecfcec5bf72.png" alt="Markdown"></p>
+<p><img src="http://i1.piimg.com/1949/80338b5cdaf19003.png" alt="Markdown"></p>
+<p>###Web结构挖掘</p>
+<p>　　Web 结构挖掘是对网站的超级链接进行分析和处理，从各个超级链接中发现权威网页和有价值的网页，并根据此标准对网页和网站进行评级、分类。Web结构挖掘主要任务是查找权威网页，并识别各网页之间的相互关系，从而发现网站的结构，获取不同网页相似度和网站的关联度。Web结构挖掘主要应用于搜素引擎，对同一主题的网页进行排序。接下来介绍两种著名的网页排名算法。</p>
+<p>####PageRank算法<br>　　PageRank算法是一种忽略掉Web页面上的文本和其它内容，根据网页之间相互的超链接来计算网页排名的一种技术。Google用它来体现网页的相关性和重要性，在搜索引擎优化操作中是经常被用来评估网页优化的成效因素之一。　　<br>　　<strong>PageRank的核心思想：</strong><br>　　1）如果一个网页被很多其他网页链接到的话说明这个网页比较重要，也就是PageRank值会相对较高；<br>　　2）如果一个PageRank值很高的网页链接到一个其他的网页，那么被链接到的网页的PageRank值会相应地提高。</p>
+<p><img src="http://i1.piimg.com/1949/388742122798e55e.png" alt="Markdown"></p>
+<p>####HITS算法<br>　　HITS算法是一种根据用户的查询请求来分析网页重要性的算法，此算法认为每一个网页应该将其authority权重和hub权重分开来考虑。<br>　　<strong>HITS核心思想：</strong><br>　　１）一个高质量的hub页面会指向很多高质量的authority页面。<br>　　２）一个高质量的authority页面会被很多高质量的hub页面所指向；</p>
+<p><img src="http://i4.buimg.com/1949/37a05070a02527e5.png" alt="Markdown"></p>
+<p>###Web使用挖掘</p>
+<p>　　Web 使用（日志）挖掘是通过对计算机上的日志文件，如在服务器的Log 文件和cookies 文件等，涉及关联规则的挖掘，从中发现频繁使用的网页模式。Web日志挖掘的主要目的包括网络广告分析、流量、用户分类、网络欺骗预防等等。Web使用挖掘主要应用于商业营销，并为商业决策提供依据。</p>
+<p><img src="http://i4.buimg.com/1949/cbc42c0e53e382eb.png" alt="Markdown"></p>
+<p>###Web数据挖掘的应用及发展方向<br>　　在搜索引擎中的应用：利用Web挖掘技术，可以提高搜索引擎获取信息与反馈结果的质量，更好地满足用户的个性化需求。例如：</p>
+<ul>
+<li><p>页面的自动分类</p>
+</li>
+<li><p>权威页面的发现</p>
+</li>
+<li>用户兴趣偏好的挖掘</li>
+</ul>
+<p>　　在电子商务中的应用：挖掘电子商务系统中Web日志与访问内容，可以获得用户的访问模式以及有价值的信息。例如：</p>
+<ul>
+<li><p>用户的兴趣爱好</p>
+</li>
+<li><p>购买频率</p>
+</li>
+<li><p>所属用户群及其特征</p>
+</li>
+<li><p>页面访问情况</p>
+</li>
+<li><p>广告点击情况</p>
+</li>
+</ul>
+<p>　　<strong>Web挖掘的发展方向：</strong></p>
+<ul>
+<li>建立新的和更好的分析模型，用于处理数据类型复杂，数据结构比较特殊的数据；</li>
+<li>融合各种异构数据的挖掘技术，加强对各种非结构化数据的开采，如图形数据、视频图像数据以及音频等综合多媒体数据；</li>
+<li>基于关键词的搜索引擎不能完全理解用户输入的意义，所以给出的页面可能不是用户所需要的。要在这方面取得进展，依赖于自然语言处理的研究进展。 </li>
+</ul>
+</div><div class="tags"></div><div class="post-nav"><a href="/2017/03/17/hello-world/" class="next">Hexo个人博客搭建</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="widget"><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="请输入关键字..."/></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-gui"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/BlueLake/" style="font-size: 15px;">BlueLake</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-fei"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/Web_Mining/">Web_Mining</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/17/hello-world/">Hexo个人博客搭建</a></li></ul></div></div></div></div><a id="totop" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.3.0" async></script><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |<a href="/atom.xml">订阅本站</a> |<span>联系博主：<a href="mailto:http://i1.piimg.com/567571/a9897bbeada82e06.png" target="_blank" class="fa fa-email"> </a><a href="http://weibo.com/p/1005055070497075/info?mod=pedit" target="_blank" class="fa fa-weibo"></a><a href="https://github.com/ChineseHuang/ChineseHuang.github.io" target="_blank" class="fa fa-github"> </a></span></p><p><span> Copyright &copy;<a href="/." rel="nofollow">Huang Tong</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span><span><a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> Theme </a>by<a rel="nofollow" target="_blank" href="https://github.com/chaooo"> Charles.</a></span></p></div></div></div><script type="text/javascript" src="/js/search.json.js?v=1.3.0"></script></body></html>
